@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A blog post about semantic HTML and accessibility practises">
+        <meta name="keywords" content="HTML, Semantic, Accessibility, Blog, SEO">
+        <meta name="author" content="Your Name Here">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid and Flexbox Layout</title>
+        <link href="./output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <style>
+            @media (max-width: 768px) {
+                main {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body class="p-4">
+        <header class="bg-blue-500 text-white p-4">
+            <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+            <section class="lg:col-span-2 flex">
+                <div class="w-1/2 bg-red-200 p-4">Flexbox Item 1</div>
+                <div class="w-1/2 bg-red-400 p-4">Flexbox Item 1</div>
+            </section>
+            <aside class="bg-green-200 p-4">Sidebar</aside>
+        </main>
+
+        <section>
+             <h2 class="text-xl font-semibold text-center mb-4">Responsive Image Gallery</h2>
+             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <img src="https://cdn.pixabay.com/photo/2025/08/01/18/44/roller-coaster-9749194_1280.jpg" alt="img1" class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://cdn.pixabay.com/photo/2021/07/15/07/50/newborn-6467762_1280.jpg" alt="img2" class="w-full h-auto rounded-lg shadow-md">
+                <img src= https://cdn.pixabay.com/photo/2025/08/12/11/55/mallards-9770059_1280.jpg alt="img3" class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://cdn.pixabay.com/photo/2023/11/01/18/44/bride-8358737_1280.jpg" alt="img4" class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://cdn.pixabay.com/photo/2022/11/14/14/13/lake-7591750_1280.jpg" alt="img5" class="w-full h-auto rounded-lg shadow-md">
+                <img src=https://cdn.pixabay.com/photo/2023/02/12/13/16/dog-7785066_1280.jpg  alt="img5" class="w-full h-auto rounded-lg shadow-md">
+             </div>
+        </section>
+
+        <footer class="bg-gray-800 text-white p-4 mt-4">
+            <p>&copy; 2024 John Doe's Blog</p>
+        </footer>
+    </body>
+</html>

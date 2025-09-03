@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A blog post about semantic HTML and accessibility practises">
+        <meta name="keywords" content="HTML, Semantic, Accessibility, Blog, SEO">
+        <meta name="author" content="Your Name Here">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+    </head>
+    <body class="p-4">
+        <header>
+             <h1>Complex Grid Layout with Nested Grids</h1>
+        </header>
+
+        <main class="grid grid-col-2 gap-4">
+            <div class="grid grid-cols-2 p-4 gap-2 bg-blue-200">
+                <div class="bg-blue-400 p-2">Nested 1</div>
+                <div class="bg-blue-500 p-2">Nested 2</div>
+            </div>
+
+            <div class="grid grid-cols-2 p-4 gap-2 bg-red-200">
+                <div class="bg-red-400 p-2">Nested 3</div>
+                <div class="bg-red-500 p-2">Nested 4</div>
+            </div>
+            <div class="grid grid-cols-2 p-4 gap-2 bg-green-200">Content 3</div>
+            <div class="grid grid-cols-2 p-4 gap-2 bg-yellow-200">Content 4</div>
+        </main>
+    </body>
+</html>

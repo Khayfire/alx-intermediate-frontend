@@ -6,27 +6,27 @@
         <meta name="keywords" content="HTML, Semantic, Accessibility, Blog, SEO">
         <meta name="author" content="Your Name Here">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Flexbox Navigation Bar</title>
+        <title>Responsive Flexbox Layout</title>
         <link href="./output.css" rel="stylesheet">
 
         <style>
             @media (max-width: 768px) {
-                nav {
+                main {
                     flex-direction: column;
-                    align-items: flex-start;
                 }
             }
         </style>
     </head>
     <body class="p-4">
         <header class="mb-4">
-            <h1 class="text-3xl font-bold">Flexbox Navigation Bar</h1>
+            <h1 class="text-3xl text-red-700 font-bold">Responsive Flexbox Layout</h1>
         </header>
-        <nav class="flex space-x-5 justify-center bg-gray-300 text-white p-4"> 
-            <a href="#"class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg">Home</a> 
-            <a href="#"class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg">About</a> 
-            <a href="#"class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg">Services</a> 
-            <a href="#"class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg">Contact</a> 
-        </nav>
+
+        <main class="flex">
+            <aside class="w-1/3 bg-gray-300 p-4">sidebar</aside>
+            <section class="w-2/3 bg-gray-500 p-4">section content</section>
+        </main>
+
+        <script src="https://cdn.tailwindcss.com"></script>  
     </body>
 </html>

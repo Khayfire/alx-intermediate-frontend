@@ -1,0 +1,9 @@
+# 0-installation-script
+
+# Step 1: Verify Node.js and npm are installed
+node -v
+npm -v
+
+# Step 2: Install Sass (version 3.7.4)
+ npm install sass -v 3.7.4
+
